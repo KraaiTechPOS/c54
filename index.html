@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>C54 Corner</title>
+
+  <!-- Favicon: simple yellow fire helmet icon (SVG base64) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI3IDI1TDMyIDIxTDM3IDI1TDMyIDM2TDI3IDI1WiIgZmlsbD0ieWVsbG93IiBzdHJva2U9Im9yYW5nZSIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxwYXRoIGQ9Ik0zMiA0MUwzMiA1MSIgc3Ryb2tlPSJvcmFuZ2UiIHN0cm9rZS13aWR0aD0iMiIvPgo8cGF0aCBkPSJNMTYgMjZIMTUuNUExMiAxMiAwIDAgMCAxNiAzOGgxMGExMiAxMiAwIDAgMCAxLjUtMTJIMjZIMTYiIGZpbGw9IiNmZjY1MDAiLz4KPC9zdmc+" />
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff4500, #ff8c00, #ffd700);
+      color: #330000;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px 40px;
+      min-height: 100vh;
+    }
+
+    /* Top navigation bar */
+    header {
+      background-color: #b22222; /* firebrick red */
+      padding: 15px 20px;
+      box-shadow: 0 4px 6px rgba(178, 34, 34, 0.7);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header img {
+      width: 36px;
+      height: 36px;
+      filter: drop-shadow(1px 1px 1px #7f3300);
+    }
+
+    header h1 {
+      color: #ffd700; /* bright yellow */
+      font-size: 2rem;
+      user-select: none;
+    }
+
+    /* Subtitle below nav */
+    .subtitle {
+      text-align: center;
+      margin: 15px 0 40px;
+      font-style: italic;
+      color: #fff5cc;
+      text-shadow: 1px 1px 3px #a94e00;
+    }
+
+    article {
+      background: #fff0cc; /* pale yellow background */
+      border: 2px solid #ff8c00;
+      border-radius: 12px;
+      padding: 20px 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 15px rgba(255, 140, 0, 0.3);
+      color: #662200;
+      transition: background 0.3s ease;
+    }
+
+    article:hover {
+      background: #fff6e1;
+    }
+
+    article h2 {
+      color: #d35400;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    article time {
+      display: block;
+      font-size: 0.9rem;
+      color: #a64d00;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #330000;
+      font-size: 0.9rem;
+      font-weight: 600;
+      user-select: none;
+    }
+
+    a {
+      color: #ff8c00;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive font scaling */
+    @media (max-width: 480px) {
+      body {
+        padding: 0 15px 30px;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+      article {
+        padding: 15px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Yellow fire helmet SVG icon inline -->
+    <img src="data:image/svg+xml;utf8,
+      <svg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 64 64' fill='none'>
+      <path d='M27 25L32 21L37 25L32 36L27 25Z' fill='%23ffd700' stroke='%23ff8c00' stroke-width='2'/>
+      <path d='M32 41V51' stroke='%23ff8c00' stroke-width='2'/>
+      <path d='M16 26H15.5A12 12 0 0 0 16 38H26A12 12 0 0 0 27.5 26H26H16Z' fill='%23ffd700'/>
+      </svg>" alt="Fire Helmet Icon" />
+    <h1>C54 Corner</h1>
+  </header>
+
+  <p class="subtitle">Your little spot on the web for fiery thoughts & ideas</p>
+
+  <article>
+    <h2>Welcome to C54 Corner!</h2>
+    <time datetime="2025-07-13">July 13, 2025</time>
+    <p>This is the very first post on C54 Corner. Stay tuned for regular updates on tech, life, and more — all with a fiery twist.</p>
+  </article>
+
+  <article>
+    <h2>My second post</h2>
+    <time datetime="2025-07-14">July 14, 2025</time>
+    <p>Here’s some more content! You can add as many posts as you want by copying the article section. Keep the fire burning!</p>
+  </article>
+
+  <footer>
+    &copy; 2025 C54 Corner. Fueled by passion and simple HTML & CSS.
+  </footer>
+</body>
+</html>
